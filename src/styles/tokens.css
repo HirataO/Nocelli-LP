@@ -1,0 +1,69 @@
+/* Design tokens — espelham as variáveis do Design System no Figma (collections Primitives/Color/Spacing/Radius).
+   ATENÇÃO: o verde institucional é PROVISÓRIO (não encontrado no site atual). Troque --green-* aqui. */
+:root {
+  /* Primitives */
+  --green-50: #EAF6EE; --green-100: #D0ECD9; --green-200: #A3D9B5; --green-300: #6FBF8A; --green-400: #3FA463;
+  --green-500: #238A4A; --green-600: #1B7240; --green-700: #155A33; --green-800: #10452A; --green-900: #0B3020;
+  --neutral-0: #FFFFFF; --neutral-50: #F6F7F6; --neutral-100: #EDEFEE; --neutral-200: #DDE0DE; --neutral-300: #C3C8C5;
+  --neutral-400: #9AA19D; --neutral-500: #6F7773; --neutral-600: #525A56; --neutral-700: #3A413E; --neutral-800: #252B28; --neutral-900: #151917;
+  --amber-100: #FCF0D9; --amber-600: #B96F00; --red-100: #FBE6E3; --red-600: #C0392B; --blue-100: #E3EEF9; --blue-600: #2563A8; --whatsapp-500: #25D366;
+
+  /* Semantic colors */
+  --color-bg-page: var(--neutral-0);
+  --color-bg-subtle: var(--neutral-50);
+  --color-bg-muted: var(--neutral-100);
+  --color-bg-inverse: var(--green-900);
+  --color-surface-card: var(--neutral-0);
+  --color-border-default: var(--neutral-200);
+  --color-border-strong: var(--neutral-300);
+  --color-border-focus: var(--green-600);
+  --color-text-primary: var(--neutral-900);
+  --color-text-secondary: var(--neutral-600);
+  --color-text-muted: var(--neutral-500);
+  --color-text-inverse: var(--neutral-0);
+  --color-text-brand: var(--green-700);
+  --color-text-on-dark-muted: var(--green-200);
+  --color-brand-primary: var(--green-600);
+  --color-brand-primary-hover: var(--green-700);
+  --color-brand-primary-pressed: var(--green-800);
+  --color-brand-subtle: var(--green-50);
+  --color-brand-subtle-border: var(--green-200);
+  --color-brand-dark: var(--green-900);
+  --color-feedback-error: var(--red-600);
+  --color-feedback-error-bg: var(--red-100);
+  --color-feedback-success: var(--green-600);
+  --color-feedback-success-bg: var(--green-50);
+  --color-feedback-warning: var(--amber-600);
+  --color-feedback-warning-bg: var(--amber-100);
+  --color-feedback-info: var(--blue-600);
+  --color-feedback-info-bg: var(--blue-100);
+  --color-channel-whatsapp: var(--whatsapp-500);
+
+  /* Typography */
+  --font-display: "Manrope", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Spacing */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 20px; --space-6: 24px;
+  --space-8: 32px; --space-10: 40px; --space-12: 48px; --space-16: 64px; --space-20: 80px; --space-24: 96px;
+
+  /* Radius */
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 8px; --radius-full: 999px;
+
+  /* Elevation */
+  --shadow-card: 0 1px 3px rgb(21 25 23 / .06), 0 4px 12px rgb(21 25 23 / .05);
+  --shadow-overlay: 0 12px 32px -4px rgb(21 25 23 / .14);
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: var(--space-20);
+  --section-y: var(--space-24);
+  --header-h: 80px;
+}
+
+@media (max-width: 1100px) {
+  :root { --gutter: var(--space-10); --section-y: 72px; --header-h: 72px; }
+}
+@media (max-width: 640px) {
+  :root { --gutter: var(--space-5); --section-y: 56px; --header-h: 64px; }
+}
